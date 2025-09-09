@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>condicionais</h1>
+    <button onclick="clicar()">Clique aqui</button>
+    <p id="resultado"></p>
+
+    <script>
+        function clicar() {
+            let nota = window.prompt('Qual sua nota');
+            let resultadoNota = document.getElementById('resultado');
+
+            if (nota>= 7) {
+                resultadoNota.innerHTML = 'O aluno está APROVADO';
+            } else {
+                resultadoNota.innerHTML = 'O aluno está REPROVADO';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
