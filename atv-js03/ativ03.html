@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade: Verificação de Maioridade</title>
+</head>
+<body>
+    <h1>Atividade: Verificação de Maioridade</h1>
+
+    <div id="resultado"></div>
+
+    <script>
+      
+        let idade = prompt("Digite a sua idade:");
+
+       
+        idade = Number(idade);
+
+        if (idade >= 18) {
+            document.getElementById("resultado").innerHTML = "Você é maior de idade.";
+        } else {
+            document.getElementById("resultado").innerHTML = "Você é menor de idade.";
+        }
+    </script>
+</body>
+</html>

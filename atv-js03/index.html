@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade: Saudação</title>
+</head>
+<body>
+    <h1>Atividade: Saudação</h1>
+
+    <div id="resultado"></div>
+
+    <script>
+        let nomeUsuario = prompt("Por favor, digite seu nome:");
+
+        if (nomeUsuario && nomeUsuario.trim() !== "") {
+            document.getElementById("resultado").innerHTML = `Olá, ${nomeUsuario}! É um prazer ter você aqui.`;
+        } else {
+            document.getElementById("resultado").innerHTML = "Você não inseriu um nome.";
+        }
+    </script>
+</body>
+</html>

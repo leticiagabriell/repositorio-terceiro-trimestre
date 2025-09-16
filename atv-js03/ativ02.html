@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade: Contador de Cliques</title>
+    <style>
+        body{
+            align-items: center;
+        }
+    button { 
+        text-align: center;
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>Atividade: Contador de Cliques</h1>
+
+    <button onclick="contarClique()">Clique aqui</button>
+
+    <div id="resultado">O botão já foi clicado 0 vezes.</div>
+
+    <script>
+        let contador = 0;
+
+        function contarClique() {
+            contador++;
+            document.getElementById("resultado").innerHTML = 
+                `O botão já foi clicado ${contador} vezes.`;
+        }
+    </script>
+</body>
+</html>
